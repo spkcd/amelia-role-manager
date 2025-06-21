@@ -1,0 +1,91 @@
+# Amelia Role Access Manager - Changelog
+
+## Version 1.1.0 - 2025-06-11
+
+### 🔧 **Bug Fixes**
+- Fixed fatal error: "TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given"
+- Resolved undefined `$this->additional_wp_capabilities` property references
+- Enhanced null checks and array validation throughout the plugin
+- Fixed capability checking logic in force override system
+
+### ✨ **Major Enhancements**
+- **Comprehensive Capability System**: Expanded from 8 to 85+ capabilities
+- **Enhanced Coverage**: Added complete WordPress core capabilities needed by Amelia
+- **Improved Capability Categories**:
+  - 39 Core Amelia capabilities (appointments, bookings, services, etc.)
+  - 28 Extended Amelia features (events, packages, resources, etc.)  
+  - 18 Essential WordPress capabilities (manage_options, edit_posts, etc.)
+
+### 🎨 **Admin Interface Improvements**
+- **Modern WordPress Styling**: Professional, clean admin interface
+- **Responsive Design**: Mobile-friendly layout and interactions
+- **Enhanced Visual Elements**:
+  - Improved button and form styling
+  - Professional color scheme with hover effects
+  - Better spacing and typography
+  - Card-based layout for better organization
+- **User Experience**: Intuitive checkbox interface with visual feedback
+- **Performance**: Optimized capability grid with scrollable display
+
+### 🧹 **Code Cleanup**
+- **Removed Debug System**: Eliminated all debug logging to prevent log flooding
+- **Clean Architecture**: Streamlined codebase by removing unused methods
+- **Performance Optimization**: Reduced memory footprint and improved efficiency
+- **Code Organization**: Better method organization and documentation
+
+### ⚡ **Performance & Security**
+- **Enhanced Security**: Improved input validation and sanitization
+- **Better Error Handling**: More robust error checking and prevention
+- **Optimized Queries**: Improved database interaction efficiency
+- **Memory Management**: Reduced resource usage
+
+### 📱 **Responsive Features**
+- **Mobile Support**: Full mobile device compatibility
+- **Tablet Optimization**: Perfect display on tablet devices
+- **Touch-Friendly**: Enhanced touch interface elements
+- **Cross-Browser**: Improved compatibility across all browsers
+
+### 🔒 **Security Improvements**
+- Enhanced nonce verification
+- Improved capability checking
+- Better input sanitization
+- XSS protection enhancements
+- SQL injection prevention
+
+---
+
+## Version 1.0.0 - 2025-06-10
+
+### 🎉 **Initial Release**
+- Complete role capability management system for AmeliaWP
+- Admin interface under Settings > Amelia Role Access
+- Basic capability assignment (8 core Amelia capabilities)
+- Individual user ID support
+- Force override system via user_has_cap filter
+- Staff role automatic access (non-configurable)
+- Debug system for troubleshooting access issues
+- WordPress Security API compliance
+- Internationalization (i18n) support
+- Clean plugin activation/deactivation
+- Comprehensive user capability overview
+- Real-time settings application
+
+### 🔧 **Technical Features**
+- Singleton class architecture
+- WordPress Settings API integration
+- Proper sanitization and escaping
+- Nonce verification for security
+- Plugin lifecycle management
+- Error logging and debug capabilities
+- Performance optimization
+- Code documentation and commenting
+
+---
+
+## Development Notes
+
+- **WordPress Compatibility**: Tested up to WordPress 6.4
+- **PHP Requirements**: PHP 7.4 or higher
+- **Plugin Dependencies**: AmeliaWP booking plugin
+- **Author**: SPARKWEB Studio
+- **License**: GPL v2 or later 
